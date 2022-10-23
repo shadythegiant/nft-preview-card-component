@@ -1,0 +1,162 @@
+*, ::after, ::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+:root{
+    
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--Very-dark-blue-main: hsl(217, 54%, 11%);
+--Very-dark-blue-card: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+
+    font-family: 'Outfit', sans-serif;
+
+    background-color: var(--Very-dark-blue-main);
+    color: var(--Soft-blue);
+    padding: 1.5rem;
+
+}
+
+img{
+    max-width: 100%;
+
+}
+
+
+ul {
+    list-style-type:none;
+    display: flex;
+    justify-content:space-between;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    margin-bottom: 0.5rem;
+
+}
+
+li:first-child {
+
+    color: var(--Cyan);
+}
+]
+p{
+    font-weight: 300;
+    font-size: 10px;
+}
+
+h2{
+    font-weight: 600;
+    margin: 1.5rem 0.5rem 0.5rem 0;
+    color: var(--White);
+
+}
+
+h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+span{
+    color: var(--White);
+    cursor: pointer;
+}
+
+span:hover{
+
+    color: var(--Cyan);
+}
+
+.container{
+    background-color: var(--Very-dark-blue-card);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+
+.avatar{
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+}
+
+.avatar img{
+  
+    width: 2rem;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.main-img {
+
+    position: relative;
+
+}
+
+.main-img div{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%,60%);
+    width:100%;
+    height: calc(100% - 2px);
+    z-index: 999;
+    opacity: 0;
+    
+}
+.icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.main-img div:hover{
+    opacity: 1;
+    transition: 0.3s ;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+
+    .container{
+        width: 300px;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
